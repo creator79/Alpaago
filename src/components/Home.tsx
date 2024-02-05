@@ -82,10 +82,10 @@ const App = () => {
 
   return (
     <div className="bg-gray-800 h-screen grid place-items-center">
-      <h1 className="flex text-3xl font-bold text-center justify-center text-white mt-[-15rem]">
+      <h1 className="flex text-3xl font-bold text-center justify-center text-white mt-[-10rem]">
         The Weather App{" "}
       </h1>
-      <div className="bg-white w-96 p-4 rounded-md  mt-[-25rem] ">
+      <div className="bg-white w-96 p-4 rounded-md  mt-[-20rem] ">
         <div className="flex items-center justify-between ">
           <input
             type="text"
@@ -102,8 +102,8 @@ const App = () => {
           </button>
         </div>
         <div
-          className={`duration-300 delay-75 overflow-hidden ${
-            showWeather.length ? "h-[27rem]" : "h-0"
+          className={`duration-300 delay-75 overflow-hidden  ${
+            showWeather.length ? "h-[27rem]" : "h-10"
           }`}
         >
           {loading ? (
