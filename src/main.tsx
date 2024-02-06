@@ -13,6 +13,7 @@ import Signup from "./components/SignUp";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import Error from "./components/Error";
+import User from "./components/User";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,9 +22,8 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
       <Route path="/" element={<Protected />}>
         <Route path="/" index element={<Home />} />
-        <Route path="*" element={<Error />} />
-       
-         r
+        <Route path="user" element={<User />} />
+        <Route path="*" element={<Error />} />r
       </Route>
     </Route>
   )
